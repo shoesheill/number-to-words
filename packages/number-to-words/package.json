@@ -1,5 +1,5 @@
 {
-  "name": "number-to-words-net",
+  "name": "number-to-word",
   "version": "1.0.0",
   "description": "Convert numbers to words in 12 languages, including currency and decimal support.",
   "main": "index.js",

@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: packages/number-to-word
+        working-directory: packages/number-to-words
 
     steps:
       - name: Checkout

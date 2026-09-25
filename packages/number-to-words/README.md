@@ -1,8 +1,8 @@
-# number-to-words-net
+# number-to-word
 
 Convert numbers to words in 12 languages from Node.js and other JavaScript runtimes. The package is dependency-free, CommonJS-compatible, and includes TypeScript declarations.
 
-[![npm](https://img.shields.io/badge/npm-number--to--words--net-red)](https://www.npmjs.com/package/number-to-words-net)
+[![npm](https://img.shields.io/badge/npm-number--to--word-red)](https://www.npmjs.com/package/number-to-word)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)](https://nodejs.org/)
 
 ![NumberToWords capabilities](capabilities.svg)
@@ -20,13 +20,13 @@ Convert numbers to words in 12 languages from Node.js and other JavaScript runti
 ## Install
 
 ```bash
-npm install number-to-words-net
+npm install number-to-word
 ```
 
 ## Quick start
 
 ```js
-const { convert } = require('number-to-words-net');
+const { convert } = require('number-to-word');
 
 convert(12345);
 // "twelve thousand three hundred forty-five"
@@ -58,7 +58,7 @@ convert(12.34, { language: 'de', includeCurrency: true });
 Converts a finite JavaScript number to words. The language can be a short code, a full language name, or an options object.
 
 ```js
-const { convert } = require('number-to-words-net');
+const { convert } = require('number-to-word');
 
 convert(42);                              // "forty-two"
 convert(42, 'Spanish');                   // "cuarenta-dos"
@@ -70,7 +70,7 @@ convert(42.5, { language: 'English' });  // "forty-two point five"
 Converts a safe integer only.
 
 ```js
-const { convertInteger } = require('number-to-words-net');
+const { convertInteger } = require('number-to-word');
 
 convertInteger(1000, 'th');
 // "หนึ่ง พัน"
@@ -81,7 +81,7 @@ convertInteger(1000, 'th');
 Converts an integer from 0 through 99. Zero returns an empty string, matching fractional conversion behavior.
 
 ```js
-const { convertFractional } = require('number-to-words-net');
+const { convertFractional } = require('number-to-word');
 
 convertFractional(34);
 // "thirty-four"
@@ -92,7 +92,7 @@ convertFractional(34);
 Returns the supported language codes.
 
 ```js
-const { languages } = require('number-to-words-net');
+const { languages } = require('number-to-word');
 
 console.log(languages);
 // ['en', 'ne', 'hi', 'ja', 'zh', 'vi', 'th', 'ar', 'ko', 'fr', 'de', 'es']

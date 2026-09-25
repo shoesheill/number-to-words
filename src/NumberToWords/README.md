@@ -16,7 +16,7 @@ Convert numbers to words in 12 languages with a small, dependency-free .NET libr
 - Target `net6.0`, `net8.0`, and `net10.0`.
 - Includes XML documentation and a NuGet symbol package.
 
-![NumberToWords capabilities](capabilities.svg)
+![NumberToWords capabilities](https://raw.githubusercontent.com/shoesheill/number-to-words/main/src/NumberToWords/capabilities.svg)
 
 ## Install
 
