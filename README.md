@@ -112,7 +112,7 @@ NUGET_API_KEY
 NPM_TOKEN
 ```
 
-The workflows use `--skip-duplicate` for NuGet and publish the npm package with public access. Never commit API keys or npm tokens.
+The NuGet workflow uses `--skip-duplicate`. For npm publishing, `NPM_TOKEN` must be a granular access token with package read/write access and **Bypass two-factor authentication** enabled. Never commit API keys or npm tokens. npm Trusted Publishing through GitHub Actions OIDC can be configured later as a token-free alternative after the package has been created.
 
 To run the release workflows, create and push the tag:
 

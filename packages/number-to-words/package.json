@@ -26,11 +26,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NumberToWords/NumberToWords.git"
+    "url": "git+https://github.com/shoesheill/number-to-words.git"
   },
-  "homepage": "https://github.com/NumberToWords/NumberToWords#readme",
+  "homepage": "https://github.com/shoesheill/number-to-words#readme",
   "bugs": {
-    "url": "https://github.com/NumberToWords/NumberToWords/issues"
+    "url": "https://github.com/shoesheill/number-to-words/issues"
   },
   "engines": {
     "node": ">=18"
