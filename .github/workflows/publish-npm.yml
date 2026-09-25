@@ -42,6 +42,29 @@ jobs:
         run: npm test
 
       - name: Publish to npm
-        run: npm publish --access public
+        shell: bash
+        run: |
+          set -o pipefail
+
+          for attempt in 1 2 3 4 5; do
+            echo "npm publish attempt ${attempt}/5"
+
+            if npm publish --access public 2>&1 | tee /tmp/npm-publish.log; then
+              exit 0
+            fi
+
+            if ! grep -qE 'E409|Failed to save packument' /tmp/npm-publish.log; then
+              exit 1
+            fi
+
+            if [ "$attempt" -eq 5 ]; then
+              echo "npm registry returned E409 after 5 attempts."
+              exit 1
+            fi
+
+            delay=$((attempt * 30))
+            echo "Transient npm E409 detected; retrying in ${delay}s."
+            sleep "$delay"
+          done
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
