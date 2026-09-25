@@ -3,7 +3,7 @@
 A single repository for two publishable packages:
 
 - `NumberToWords.Core` — the .NET NuGet package, targeting `net6.0`, `net8.0`, and `net10.0`.
-- `number-to-word` — the dependency-free npm package.
+- `number-to-words-core` — the dependency-free npm package.
 
 Both packages support converting numbers to words in English, Nepali, Hindi, Japanese, Chinese, Vietnamese, Thai, Arabic, Korean, French, German, and Spanish. Decimal values are rounded to two places and can optionally include currency names.
 
@@ -68,11 +68,11 @@ The NuGet package contains XML documentation, a symbol package, the README, and 
 ## npm usage
 
 ```bash
-npm install number-to-word
+npm install number-to-words-core
 ```
 
 ```js
-const { convert } = require('number-to-word');
+const { convert } = require('number-to-words-core');
 
 convert(12345, 'en');                 // twelve thousand three hundred forty-five
 convert(12345, 'fr');                 // douze mille trois cent quarante-cinq
@@ -103,7 +103,7 @@ The same comparison is available in both package READMEs. It uses `12345` for th
 Publishing is automated from the GitHub release tag. Push a semantic tag such as `v1.2.3`; both workflows use that same tag version:
 
 - `.github/workflows/publish-nuget.yml` publishes `NumberToWords.Core` to NuGet.
-- `.github/workflows/publish-npm.yml` publishes `number-to-word` to npm.
+- `.github/workflows/publish-npm.yml` publishes `number-to-words-core` to npm.
 
 Configure these GitHub repository secrets:
 
