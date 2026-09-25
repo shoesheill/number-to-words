@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">NumberToWords capabilities</title>
+  <desc id="desc">Capabilities of the NumberToWords NuGet and npm packages, including supported languages and conversion features.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0f172a"/><stop offset="1" stop-color="#263449"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <style>
+      .h1{font:700 38px Segoe UI,Arial,sans-serif;fill:#f8fafc}.h2{font:700 20px Segoe UI,Arial,sans-serif;fill:#f8fafc}.p{font:400 15px Segoe UI,Arial,sans-serif;fill:#e2e8f0}.s{font:700 13px Segoe UI,Arial,sans-serif;fill:#e0f2fe}.muted{font:400 13px Segoe UI,Arial,sans-serif;fill:#94a3b8}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="24" fill="url(#bg)"/>
+  <rect x="34" y="32" width="1132" height="696" rx="22" fill="#111c33" stroke="#475569" stroke-width="2"/>
+  <rect x="34" y="32" width="1132" height="7" rx="4" fill="url(#line)"/>
+  <text x="72" y="92" class="h1">NumberToWords</text>
+  <text x="72" y="124" class="p">One conversion engine ﾂｷ Two publishable packages ﾂｷ Twelve languages</text>
+  <rect x="894" y="66" width="220" height="48" rx="24" fill="#172554" stroke="#3b82f6"/><text x="1004" y="96" text-anchor="middle" class="s">NuGet + npm</text>
+
+  <rect x="72" y="166" width="330" height="205" rx="16" fill="#172033" stroke="#334155"/>
+  <text x="98" y="204" class="h2">Conversion</text>
+  <circle cx="105" cy="238" r="5" fill="#38bdf8"/><text x="124" y="244" class="p">Positive and negative integers</text>
+  <circle cx="105" cy="270" r="5" fill="#38bdf8"/><text x="124" y="276" class="p">Decimals rounded to two places</text>
+  <circle cx="105" cy="302" r="5" fill="#38bdf8"/><text x="124" y="308" class="p">Language-specific connectors</text>
+  <circle cx="105" cy="334" r="5" fill="#38bdf8"/><text x="124" y="340" class="p">Deterministic text output</text>
+
+  <rect x="435" y="166" width="330" height="205" rx="16" fill="#172033" stroke="#334155"/>
+  <text x="461" y="204" class="h2">Currency</text>
+  <circle cx="468" cy="238" r="5" fill="#a78bfa"/><text x="487" y="244" class="p">Optional currency names</text>
+  <circle cx="468" cy="270" r="5" fill="#a78bfa"/><text x="487" y="276" class="p">Fractional currency names</text>
+  <circle cx="468" cy="302" r="5" fill="#a78bfa"/><text x="487" y="308" class="p">Per-language currency wording</text>
+  <circle cx="468" cy="334" r="5" fill="#a78bfa"/><text x="487" y="340" class="p">Dollars, euros, rupees, and more</text>
+
+  <rect x="798" y="166" width="330" height="205" rx="16" fill="#172033" stroke="#334155"/>
+  <text x="824" y="204" class="h2">Developer experience</text>
+  <circle cx="831" cy="238" r="5" fill="#34d399"/><text x="850" y="244" class="p">Static API + service interface</text>
+  <circle cx="831" cy="270" r="5" fill="#34d399"/><text x="850" y="276" class="p">CommonJS JavaScript API</text>
+  <circle cx="831" cy="302" r="5" fill="#34d399"/><text x="850" y="308" class="p">TypeScript declarations included</text>
+  <circle cx="831" cy="334" r="5" fill="#34d399"/><text x="850" y="340" class="p">No npm runtime dependencies</text>
+
+  <text x="72" y="425" class="h2">Supported languages</text>
+  <rect x="72" y="448" width="1056" height="166" rx="16" fill="#0f1b31" stroke="#334155"/>
+  <g>
+    <rect x="98" y="476" width="145" height="40" rx="20" fill="#0e7490"/><text x="170" y="502" text-anchor="middle" class="s">English ﾂｷ en</text>
+    <rect x="260" y="476" width="145" height="40" rx="20" fill="#155e75"/><text x="332" y="502" text-anchor="middle" class="s">Nepali ﾂｷ ne</text>
+    <rect x="422" y="476" width="145" height="40" rx="20" fill="#1d4ed8"/><text x="494" y="502" text-anchor="middle" class="s">Hindi ﾂｷ hi</text>
+    <rect x="584" y="476" width="145" height="40" rx="20" fill="#4338ca"/><text x="656" y="502" text-anchor="middle" class="s">Japanese ﾂｷ ja</text>
+    <rect x="746" y="476" width="145" height="40" rx="20" fill="#7c3aed"/><text x="818" y="502" text-anchor="middle" class="s">Chinese ﾂｷ zh</text>
+    <rect x="908" y="476" width="190" height="40" rx="20" fill="#0f766e"/><text x="1003" y="502" text-anchor="middle" class="s">Vietnamese ﾂｷ vi</text>
+    <rect x="98" y="536" width="145" height="40" rx="20" fill="#be123c"/><text x="170" y="562" text-anchor="middle" class="s">Thai ﾂｷ th</text>
+    <rect x="260" y="536" width="145" height="40" rx="20" fill="#0369a1"/><text x="332" y="562" text-anchor="middle" class="s">Arabic ﾂｷ ar</text>
+    <rect x="422" y="536" width="145" height="40" rx="20" fill="#1e40af"/><text x="494" y="562" text-anchor="middle" class="s">Korean ﾂｷ ko</text>
+    <rect x="584" y="536" width="145" height="40" rx="20" fill="#4c1d95"/><text x="656" y="562" text-anchor="middle" class="s">French ﾂｷ fr</text>
+    <rect x="746" y="536" width="145" height="40" rx="20" fill="#374151"/><text x="818" y="562" text-anchor="middle" class="s">German ﾂｷ de</text>
+    <rect x="908" y="536" width="190" height="40" rx="20" fill="#9f1239"/><text x="1003" y="562" text-anchor="middle" class="s">Spanish ﾂｷ es</text>
+  </g>
+  <rect x="72" y="648" width="1056" height="44" rx="14" fill="#172554" stroke="#4f46e5"/>
+  <text x="600" y="676" text-anchor="middle" class="p">MIT licensed ﾂｷ .NET 6 + .NET 8 + .NET 10 ﾂｷ Node.js 18+ ﾂｷ XML docs ﾂｷ symbol package ﾂｷ typed npm API</text>
+</svg>

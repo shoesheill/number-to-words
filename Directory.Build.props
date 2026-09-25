@@ -1,0 +1,24 @@
+<Project>
+
+  <PropertyGroup>
+    <Authors>NumberToWords Contributors</Authors>
+    <Company>NumberToWords</Company>
+    <Description>Convert numbers to words in English, Nepali, Hindi, Japanese, Chinese, Vietnamese, Thai, Arabic, Korean, French, German, and Spanish.</Description>
+    <PackageTags>numbersto;words;conversion;numbers;internationalization;i18n;culture;currency;decimal;integer</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/NumberToWords/NumberToWords</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/NumberToWords/NumberToWords</PackageProjectUrl>
+    <PackageReleaseNotes>Initial release with 12 language support.</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)artifacts/nuget</PackageOutputPath>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

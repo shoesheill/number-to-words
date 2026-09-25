@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net8.0;net10.0</TargetFrameworks>
+    <AssemblyName>NumberToWords</AssemblyName>
+    <RootNamespace>NumberToWords</RootNamespace>
+    <PackageId>NumberToWords.Core</PackageId>
+    <Product>NumberToWords.Core</Product>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="capabilities.svg" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

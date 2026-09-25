@@ -1,0 +1,41 @@
+{
+  "name": "number-to-words-net",
+  "version": "1.0.0",
+  "description": "Convert numbers to words in 12 languages, including currency and decimal support.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "capabilities.svg",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/index.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "number-to-words",
+    "numbers",
+    "words",
+    "i18n",
+    "internationalization",
+    "currency"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NumberToWords/NumberToWords.git"
+  },
+  "homepage": "https://github.com/NumberToWords/NumberToWords#readme",
+  "bugs": {
+    "url": "https://github.com/NumberToWords/NumberToWords/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "number-to-words-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Monorepo for the NumberToWords NuGet and npm packages.",
+  "scripts": {
+    "test:dotnet": "dotnet test NumberToWords.sln --configuration Release",
+    "test:npm": "npm --prefix packages/number-to-words test",
+    "test": "npm run test:dotnet && npm run test:npm",
+    "build:nuget": "dotnet pack src/NumberToWords/NumberToWords.csproj --configuration Release --output artifacts/nuget",
+    "build:npm": "npm pack ./packages/number-to-words --pack-destination .",
+    "pack": "npm run build:nuget && npm run build:npm"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+
